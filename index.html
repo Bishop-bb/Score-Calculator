@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Score Calculator</h1>
+
+
+        <h3>Score Scale</h3>
+
+        <div id="grade">
+            <span><b>70 - 100 = EXCELLENT</b></span>
+            <span><b>60 - 69 = <b>VERY GOOD</b></span>
+            <span><b>50 - 59 = <b>GOOD</span></b><br>
+            <span id="span4"><b>45 - 49 = <b>FAIR</span></b>
+            <span><b>40 - 44 =<b>POOR</span></b>
+            <span><b>0 - 43 = <b>VERY POOR</span></b>
+        </div>
+
+
+        <div class="input1">
+            <span>Enter your score</span>
+            <input type="number" id="name" oninput="getgrade()"><br>
+        </div>
+
+
+        
+        <div class="input1">
+            <span id="in2"></span>
+            <!-- <input type="text" id="in2"><br> -->
+        </div>
+
+
+    </section>
+
+
+
+
+    <script>
+        function getgrade(){
+        let score = document.getElementById('name').value
+        let data
+
+
+        if (score == "") {
+                data = "input a score..."
+        }
+
+        else if (score >= 70 && score <= 100) {
+                data = "EXCELLENT"
+        }
+
+        else if(score >= 60 && score <= 69) {
+            data = "VERY GOOD"
+        }
+
+        else if(score >= 50 && score <= 59) {
+            data = "GOOD"
+        }
+
+        else if(score >= 45 && score <= 49) {
+            data = "FAIR"
+        }
+
+        else if(score >= 40 && score <= 45) {
+            data = "POOR"
+        }
+
+        else if(score >= 0 && score <= 40) {
+            data = "VERY POOR"
+        }
+
+        else {
+            data = "INVALID"
+        }
+
+        document.getElementById('in2').innerHTML = data
+        
+
+
+
+    
+    }
+
+
+
+
+    </script>
+</body>
+</html>

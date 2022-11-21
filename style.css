@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+body{
+    background-color: black;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin-top: 120px;
+    padding: 0, 20px;
+    
+}
+section h1, h3{
+    align-self: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 30px;
+}
+
+#grade{
+    background-color: brown;
+    align-self: center;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+
+
+#grade span{
+    padding: 15px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.input1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.input1 span{
+    font-size: 25px;
+    align-self: center;
+}
+
+#name{
+    width: 30%;
+    margin-top: 10px;
+    align-self: center;
+    height: 40px
+}
+
+#in2{
+    width: 30%;
+    /* margin-top: px; */
+    align-self: center;
+    height: 40px;
+    text-align: center;
+}
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 700px) {
+    #grade span{
+        display: flex;
+        padding: 0, 15px;
+    }
+
+    #span4{
+        margin-top: -20px
+    }
+    
+    section{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 530px) {
+    #in2{
+        width: 70%;
+    }
+
+    section h3{
+        font-size: 20px;
+    }
+}
