@@ -54,7 +54,8 @@ section h1, h3{
     width: 30%;
     margin-top: 10px;
     align-self: center;
-    height: 40px
+    height: 40px;
+    background-color: whitef;
 }
 
 #in2{
@@ -90,6 +91,6 @@ section h1, h3{
     }
 
     section h3{
-        font-size: 20px;
+        font-size: 23px;
     }
 }
