@@ -26,7 +26,7 @@ section h1, h3{
 #grade{
     background-color: brown;
     align-self: center;
-    padding: 20px 0;
+    padding: 15px 0;
     border-radius: 20px;
 }
 
@@ -61,7 +61,7 @@ section h1, h3{
 
 #in2{
     width: 30%;
-    /* margin-top: px; */
+   
     align-self: center;
     height: 40px;
     text-align: center;
@@ -100,5 +100,14 @@ section h1, h3{
     padding: 15px;
     font-size: 18px;
     font-style: italic;
+}
+
+#input1 span{
+    font-size: 20px;
+}
+
+#in2{
+    font-size: 20px;
+    margin-top: -8px;
 }
 }
